@@ -1,11 +1,18 @@
-<div class="card my-3 ">
-  <h5 class="card-header">
-    <% if @message.outbox.user.is_doctor? %>Dr.<% end %>
-    <%= @message.outbox.user.full_name %>
-  </h5>
-  <div class="card-body">
-    <p class="card-text"><%= @message.body %></p>
-    <%= link_to "Reply", new_message_path, class: "btn btn-primary" %>
-    <a href="#" class="btn btn-primary">I've lost my prescription</a>
+<div class="row pt-5">
+  <%= render partial: "partials/left_column", locals: { user: @current_user } %>
+  <div class='col-sm-1'></div>
+  <div class='col-sm-9 inbox-outbox-card'>
+    <h5 class="card-header">
+      <% if @message.outbox.user.is_doctor? %>Dr.<% end %>
+      <%= @message.outbox.user.full_name %>
+    </h5>
+    <div class="card-body">
+      <p class="card-text"><%= @message.body %></p>
+      <%= link_to "Reply", new_message_reply_path(@message), class: "btn btn-primary" %>
+      <% if @current_user.is_patient %>
+
+        <%= link_to "I've lost my prescription", user_prescription_path(@current_user), method: :post, class:"btn btn-primary" %>
+      <% end %>
+    </div>
   </div>
 </div>

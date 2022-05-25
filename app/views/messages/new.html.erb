@@ -4,9 +4,12 @@
   </h5>
 
   <div class="card-body">
-    <%= form_for @message do |f| %>
+    <%= form_for @message, url: messages_path do |f| %>
+      <div>from: <%= @current_user.full_name %></div>
+      <div>to: <%= f.collection_select :inbox_id, @users, :id, :full_name, { include_blank: 'Select a receiver' } %></div>
       <div class="form-group py-3">
         <%= f.text_area :body, class: "form-control", rows: 3 %>
+        <%= f.hidden_field :outbox_id, value: @current_user.id %>
       </div>
 
       <div class="form-group mb-0 text-right">
@@ -14,5 +17,4 @@
       </div>
     <% end %>
   </div>
-
 </div>
