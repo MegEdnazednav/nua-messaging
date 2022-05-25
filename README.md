@@ -28,6 +28,11 @@ A few notes:
   - create a payment in the system
   - call the API
 
+### NEXT STEPS (not for now, I'm afraid)
+
+- Proper error handling
+- User authentication
+- Extend the Message model so that it can have self-referring replies that can be shown in a thread
 
 LOGIN
 ![](https://raw.githubusercontent.com/MegEdnazednav/nua-messaging/master/app/assets/images/login-screen.png)
