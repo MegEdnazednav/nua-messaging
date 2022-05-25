@@ -11,6 +11,7 @@ A few notes:
 - clone the repo
 - run `bundle install`
 - run `rails db:create db:migrate db:seed`
+- run `rails s`
 - go to `localhost:3000` to see it in action
 
 ### HOW IT WORKS
@@ -33,6 +34,7 @@ A few notes:
 - Proper error handling
 - User authentication
 - Extend the Message model so that it can have self-referring replies that can be shown in a thread
+- Probably a lot of things to make this production proof :-)
 
 LOGIN
 ![](https://raw.githubusercontent.com/MegEdnazednav/nua-messaging/master/app/assets/images/login-screen.png)
