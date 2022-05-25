@@ -1,0 +1,27 @@
+<div class="row pt-5">
+  <%= render partial: "partials/left_column", locals: { user: @current_user } %>
+  <div class='col-sm-1'></div>
+  <div class='col-sm-9 inbox-outbox-card'>
+    <h5 class="card-header">
+      Reply to <% if @original_message.outbox.user.is_doctor? %>Dr.<% end %>
+      <%= @original_message.outbox.user.full_name %>
+    </h5>
+
+    <div class="card-body">
+      <div><%= @original_message.body %></div>
+      <div>-- <% if @original_message.outbox.user.is_doctor? %>Dr.<% end %>
+      <%= @original_message.outbox.user.full_name %></div>
+      <%= form_for @new_message, url: message_reply_path(@original_message.id) do |f| %>
+        <div class="form-group py-3">
+          <%= f.text_area :body, class: "form-control", rows: 3 %>
+          <%= f.hidden_field :outbox_id, value: @current_user.id %>
+          <%= f.hidden_field :inbox_id, value: define_receiver(@original_message, @current_user) %>
+        </div>
+
+        <div class="form-group mb-0 text-right">
+          <%= f.submit 'Send Message', class: 'btn btn-primary' %>
+        </div>
+      <% end %>
+    </div>
+  </div>
+</div>
