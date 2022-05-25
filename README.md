@@ -27,3 +27,5 @@ A few notes:
   - create an unread message in the Admin's inbox
   - create a payment in the system
   - call the API
+
+![](https://raw.githubusercontent.com/MegEdnazednav/nua-messaging/master/app/assets/images/login-screen.png | width=200)
