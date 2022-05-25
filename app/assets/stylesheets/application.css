@@ -14,3 +14,90 @@
  *= require_self
  *= require bootstrap.min
  */
+
+body {
+  background-image: url("background.png");
+  background-size: cover;
+  font-family: "Josefin Sans", sans-serif;
+}
+
+.navbar {
+  background: #27b9aa;
+  color: white;
+}
+
+.navbar a {
+  color: white;
+}
+
+.nav.nav-tabs {
+  border: none;
+}
+
+.nav.nav-tabs li button {
+  border: none;
+}
+
+.nav-tabs .nav-link {
+  background: white;
+  color: black;
+  border-radius: 0.25em;
+  outline: none !important;
+}
+
+.nav-tabs .nav-link.active {
+  background: #27b9aa;
+  color: white;
+}
+
+.inbox-outbox-link span.active {
+  color: white;
+}
+
+.user-page {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.user-page .select-user {
+  font-size: 26px;
+  margin-bottom: 20px;
+}
+
+.user-page .select-user-box {
+  padding: 10px 22px;
+  font-size: 18px;
+  margin-right: 10px;
+  border: none;
+  border-radius: 0.25rem;
+}
+
+.inbox-outbox-card {
+  padding: 20px;
+  border-radius: 10px;
+  background: white;
+}
+
+.inbox-outbox-card.left {
+  height: fit-content;
+}
+
+.unread {
+  color: #27b9aa;
+}
+
+.bg-unread {
+  background: #f3f3f3;
+}
+
+.pagination {
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.pagination > * {
+  margin-left: 10px;
+}
