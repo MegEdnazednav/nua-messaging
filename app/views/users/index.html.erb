@@ -1,0 +1,9 @@
+<div class="user-page">
+  <div class="select-user">Welcome, please select a user</div>
+  <%= form_for 'user', url: login_path, method: :get do |f| %>
+    <div class="d-flex align-items-center">
+      <%= f.collection_select :user_id, @users, :id, :full_name, { include_blank: 'Select your username' }, { class: 'select-user-box' } %>
+      <%= f.submit 'Log in', class: 'btn btn-primary' %>
+    </div>
+  <% end %>
+</div>
