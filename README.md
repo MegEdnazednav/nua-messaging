@@ -29,3 +29,18 @@ A few notes:
   - call the API
 
 ![](https://raw.githubusercontent.com/MegEdnazednav/nua-messaging/master/app/assets/images/login-screen.png)
+LOGIN
+
+![](https://raw.githubusercontent.com/MegEdnazednav/nua-messaging/master/app/assets/images/inbox.png)
+INBOX
+
+![](https://raw.githubusercontent.com/MegEdnazednav/nua-messaging/master/app/assets/images/outbox.png)
+OUTBOX
+
+![](https://raw.githubusercontent.com/MegEdnazednav/nua-messaging/master/app/assets/images/view-message.png)
+VIEW MESSAGE
+
+![](https://raw.githubusercontent.com/MegEdnazednav/nua-messaging/master/app/assets/images/reply-message.png)
+REPLY MESSAGE
+
+
