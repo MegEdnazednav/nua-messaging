@@ -28,19 +28,25 @@ A few notes:
   - create a payment in the system
   - call the API
 
-![](https://raw.githubusercontent.com/MegEdnazednav/nua-messaging/master/app/assets/images/login-screen.png)
+
 LOGIN
+![](https://raw.githubusercontent.com/MegEdnazednav/nua-messaging/master/app/assets/images/login-screen.png)
 
-![](https://raw.githubusercontent.com/MegEdnazednav/nua-messaging/master/app/assets/images/inbox.png)
+
 INBOX
+![](https://raw.githubusercontent.com/MegEdnazednav/nua-messaging/master/app/assets/images/inbox.png)
 
-![](https://raw.githubusercontent.com/MegEdnazednav/nua-messaging/master/app/assets/images/outbox.png)
+
 OUTBOX
+![](https://raw.githubusercontent.com/MegEdnazednav/nua-messaging/master/app/assets/images/outbox.png)
 
-![](https://raw.githubusercontent.com/MegEdnazednav/nua-messaging/master/app/assets/images/view-message.png)
+
 VIEW MESSAGE
+![](https://raw.githubusercontent.com/MegEdnazednav/nua-messaging/master/app/assets/images/view-message.png)
 
-![](https://raw.githubusercontent.com/MegEdnazednav/nua-messaging/master/app/assets/images/reply-message.png)
+
 REPLY MESSAGE
+![](https://raw.githubusercontent.com/MegEdnazednav/nua-messaging/master/app/assets/images/reply-message.png)
+
 
 
