@@ -27,3 +27,31 @@ A few notes:
   - create an unread message in the Admin's inbox
   - create a payment in the system
   - call the API
+
+### NEXT STEPS (not for now, I'm afraid)
+
+- Proper error handling
+- User authentication
+- Extend the Message model so that it can have self-referring replies that can be shown in a thread
+
+LOGIN
+![](https://raw.githubusercontent.com/MegEdnazednav/nua-messaging/master/app/assets/images/login-screen.png)
+
+
+INBOX
+![](https://raw.githubusercontent.com/MegEdnazednav/nua-messaging/master/app/assets/images/inbox.png)
+
+
+OUTBOX
+![](https://raw.githubusercontent.com/MegEdnazednav/nua-messaging/master/app/assets/images/outbox.png)
+
+
+VIEW MESSAGE
+![](https://raw.githubusercontent.com/MegEdnazednav/nua-messaging/master/app/assets/images/view-message.png)
+
+
+REPLY MESSAGE
+![](https://raw.githubusercontent.com/MegEdnazednav/nua-messaging/master/app/assets/images/reply-message.png)
+
+
+
