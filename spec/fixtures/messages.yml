@@ -1,0 +1,10 @@
+first_message:
+  body: "I am text"
+  outbox: outbox_one
+  inbox: inbox_two
+  read: false
+second_message:
+  body: "I am text"
+  outbox: outbox_two
+  inbox: inbox_one
+  read: false

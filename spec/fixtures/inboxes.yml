@@ -1,0 +1,6 @@
+inbox_one:
+  user: patient_user
+inbox_two:
+  user: doctor_user
+inbox_three:
+  user: admin_user

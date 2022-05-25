@@ -1,0 +1,4 @@
+outbox_one:
+  user: patient_user
+outbox_two:
+  user: doctor_user
